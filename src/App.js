@@ -14,8 +14,11 @@ import { View, StyleSheet } from "react-native"
     import Aleatorio from "./components/Aleatorio"
     import Titulo from "./components/Titulo"
     import Botao from "./components/Botao"
+    import Contador from "./components/Contador"
+    import Pai from "./components/direta/Pai"
+    import Pai from "./components/indireta/Pai"
 */}
-import Contador from "./components/Contador"
+import ContadorV2 from "./components/contador/ContadorV2"
 
 function App() {
     return <View style={style.App}>
@@ -29,9 +32,11 @@ function App() {
             <Aleatorio n1={1} n2={60} />
             <Titulo principal='Cadastro de Produto' secundario='Tela de Cadastro do Produto'/>
             <Botao />
-        */}
         <Contador inicial={100} passo={13}/>
         <Contador />
+        <Pai />
+        */}
+        <ContadorV2 />
     </View>
 }
 
